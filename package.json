@@ -1,8 +1,8 @@
 {
-  "name": "insight-api",
-  "description": "A Bitcoin blockchain REST and web socket API service for Bitcore Node.",
+  "name": "insight-api-bellcoin",
+  "description": "A Bellcoin blockchain REST and web socket API service for Bellcore Node.",
   "version": "0.3.2",
-  "repository": "git://github.com/bitpay/insight-api.git",
+  "repository": "git://github.com/bellcoin-electrum/insight-api-bellcoin.git",
   "contributors": [
     {
       "name": "Gustavo Cortez",
@@ -38,18 +38,18 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/bitpay/insight-api/issues"
+    "url": "https://github.com/bellcoin-electrum/insight-api-bellcoin/issues"
   },
-  "homepage": "https://github.com/bitpay/insight-api",
+  "homepage": "https://github.com/bellcoin-electrum/insight-api-bellcoin",
   "license": "MIT",
   "keywords": [
     "insight",
     "insight api",
     "blockchain",
-    "bitcoin api",
+    "bellcoin api",
     "blockchain api",
     "json",
-    "bitcore"
+    "bellcore"
   ],
   "engines": {
     "node": ">=0.12.0"
@@ -58,10 +58,10 @@
     "test": "NODE_ENV=test mocha -R spec --recursive"
   },
   "main": "lib",
-  "bitcoreNode": "lib",
+  "bellcoreNode": "lib",
   "dependencies": {
     "async": "*",
-    "bitcore-lib": "^0.13.7",
+    "bellcore-lib": "git://github.com/bellcoin-electrum/bellcore-lib.git",
     "bitcore-message": "^1.0.1",
     "body-parser": "^1.13.3",
     "lodash": "^2.4.1",

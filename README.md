@@ -1,49 +1,26 @@
 # Insight API
 
-A Bitcoin blockchain REST and web socket API service for [Bitcore Node](https://github.com/bitpay/bitcore-node).
+A Bellcoin blockchain REST and web socket API service for [Bellcore Node](https://github.com/bellcoin-electrum/bellcore-node).
 
-This is a backend-only service. If you're looking for the web frontend application, take a look at https://github.com/bitpay/insight.
+This is a backend-only service. If you're looking for the web frontend application, take a look at https://github.com/bellcoin-electrum/insight-ui-bellcoin.
 
 ## Getting Started
 
 ```bash
-npm install -g bitcore-node@latest
-bitcore-node create mynode
+npm install -g git://github.com/bellcoin-electrum/bellcore-node.git
+bellcore-node create mynode
 cd mynode
-bitcore-node install insight-api
-bitcore-node start
+bellcore-node install git://github.com/bellcoin-electrum/insight-api-bellcoin.git
+bellcore-node start
 ```
 
 The API endpoints will be available by default at: `http://localhost:3001/insight-api/`
 
 ## Prerequisites
 
-- [Bitcore Node 0.2.x](https://github.com/bitpay/bitcore-node)
+- [Bellcore Node](https://github.com/bellcoin-electrum/bellcore-node)
 
-**Note:** You can use an existing Bitcoin data directory, however `txindex` needs to be set to true in `bitcoin.conf`.
-
-## Notes on Upgrading from v0.2
-
-Some of the fields and methods are not supported:
-
-The `/tx/<txid>` endpoint JSON response will not include the following fields on the "vin"
-object:
-- `doubleSpentTxId` // double spends are not currently tracked
-- `isConfirmed` // confirmation of the previous output
-- `confirmations` // confirmations of the previous output
-- `unconfirmedInput`
-
-The `/tx/<txid>` endpoint JSON response will not include the following fields on the "vout"
-object.
-- `spentTs`
-
-The `/status?q=getTxOutSetInfo` method has also been removed due to the query being very slow and locking bitcoind.
-
-Plug-in support for Insight API is also no longer available, as well as the endpoints:
-- `/email/retrieve`
-- `/rates/:code`
-
-Caching support has not yet been added in the v0.3 upgrade.
+**Note:** You can use an existing Bellcoin data directory, however `txindex` needs to be set to true in `bellcoin.conf`.
 
 ## API HTTP Endpoints
 
