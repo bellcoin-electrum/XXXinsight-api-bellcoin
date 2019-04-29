@@ -60,9 +60,10 @@
   "main": "lib",
   "bellcoreNode": "lib",
   "dependencies": {
+    "@y-chan/coininfo": "*",
     "async": "*",
     "bellcore-lib": "0.16.0",
-    "bitcore-message": "^1.0.1",
+    "@monaco-ex/bitcore-message": "^1.0.3-segwit-1",
     "body-parser": "^1.13.3",
     "compression": "^1.6.1",
     "lodash": "^2.4.1",
