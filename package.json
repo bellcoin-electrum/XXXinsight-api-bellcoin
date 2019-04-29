@@ -61,7 +61,7 @@
   "bellcoreNode": "lib",
   "dependencies": {
     "async": "*",
-    "bellcore-lib": "git://github.com/bellcoin-electrum/bellcore-lib.git",
+    "bellcore-lib": "0.14.0",
     "bitcore-message": "^1.0.1",
     "body-parser": "^1.13.3",
     "lodash": "^2.4.1",
