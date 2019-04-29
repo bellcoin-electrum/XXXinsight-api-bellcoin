@@ -63,8 +63,8 @@
         ]
     },
     {
-        "poolName":"cpumining pool"
-        "url":"http://cpumining.zapto.org/"
+        "poolName":"cpumining pool",
+        "url":"http://cpumining.zapto.org/",
         "searchStrings": [
             "cpumining pool"
         ]
