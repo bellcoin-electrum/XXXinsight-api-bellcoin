@@ -62,7 +62,7 @@
   "dependencies": {
     "@y-chan/coininfo": "*",
     "async": "*",
-    "bellcore-lib": "0.14.11",
+    "bellcore-lib": "0.14.12",
     "@monaco-ex/bitcore-message": "^1.0.3-segwit-1",
     "body-parser": "^1.13.3",
     "compression": "^1.6.1",
