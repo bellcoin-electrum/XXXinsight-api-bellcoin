@@ -1,7 +1,7 @@
 {
   "name": "insight-api-bellcoin",
   "description": "A Bellcoin blockchain REST and web socket API service for Bellcore Node.",
-  "version": "0.4.31",
+  "version": "0.4.32",
   "repository": "git://github.com/bellcoin-electrum/insight-api-bellcoin.git",
   "contributors": [
     {
@@ -62,7 +62,7 @@
   "dependencies": {
     "@y-chan/coininfo": "*",
     "async": "*",
-    "bellcore-lib": "0.14.13",
+    "bellcore-lib": "0.16.1",
     "@monaco-ex/bitcore-message": "^1.0.3-segwit-1",
     "body-parser": "^1.13.3",
     "compression": "^1.6.1",

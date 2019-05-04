@@ -7,10 +7,10 @@ This is a backend-only service. If you're looking for the web frontend applicati
 ## Getting Started
 
 ```bash
-npm install -g git://github.com/bellcoin-electrum/bellcore-node.git
+npm install -g bellcore-node
 bellcore-node create mynode
 cd mynode
-bellcore-node install git://github.com/bellcoin-electrum/insight-api-bellcoin.git
+bellcore-node install insight-api-bellcoin
 bellcore-node start
 ```
 
